@@ -513,7 +513,7 @@ class VerticalDragGestureRecognizer extends DragGestureRecognizer {
 
   @override
   bool _hasSufficientGlobalDistanceToAccept(PointerDeviceKind pointerDeviceKind) {
-    return _globalDistanceMoved.abs() > kTouchSlop / 3;
+    return _globalDistanceMoved.abs() > kTouchSlop / 2;
   }
 
   @override
@@ -554,7 +554,7 @@ class HorizontalDragGestureRecognizer extends DragGestureRecognizer {
 
   @override
   bool _hasSufficientGlobalDistanceToAccept(PointerDeviceKind pointerDeviceKind) {
-    return _globalDistanceMoved.abs() > kTouchSlop / 3;
+    return _globalDistanceMoved.abs() > kTouchSlop / 2;
   }
 
   @override
